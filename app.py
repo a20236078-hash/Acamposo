@@ -12,7 +12,7 @@ def get_base64(file_path):
 img_base64 = get_base64("fotosv.jpg")
 
 # Configuración básica de la página de Streamlit
-st.set_page_config(page_title="Para Estrella ❤️", layout="centered")
+st.set_page_config(page_title="Para Andrea Camposo ❤️", layout="centered")
 
 # Ocultar elementos propios de Streamlit
 st.markdown("""
@@ -267,5 +267,6 @@ Espero quieras pasar conmigo este día tan especial, recordándote que esta cart
 </html>
 """
 html_code = html_code.replace("IMAGEN_AQUI", img_base64)
+
 
 components.html(html_code, height=900, scrolling=False)
